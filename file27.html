@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Booleans have only two values true or false</h1>
+    <p id="demo"></p>
+    <script>
+        let x = 5;
+        let y = 6;
+        let z = 7;
+
+        // Booleans are often used in conditional statements
+        let a = (x < y) && (y < z); // true
+        let b = (x > y) || (y < z); // true
+        let c = !(x < y); // false
+        let d = (x == y); // false
+        let e = (x != y); // true
+        let f = (x === y); // false
+
+        document.getElementById('demo').innerHTML = 
+            "(x < y) && (y < z): " + a + "<br>" +
+            "(x > y) || (y < z): " + b + "<br>" +
+            "!(x < y): " + c + "<br>" +
+            "(x == y): " + d + "<br>" +
+            "(x != y): " + e + "<br>" +
+            "(x === y): " + f;
+    </script>
+</body>
+</html>
